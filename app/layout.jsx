@@ -7,14 +7,15 @@ export const metadata = {
 }
 
 //import components
-import {Navbar} from '@/components';
+import {Navbar, Footer} from '@/components';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
       <Navbar/>
-      {children}</body>
+      {children}
+      <Footer /></body>
     </html>
   )
 }

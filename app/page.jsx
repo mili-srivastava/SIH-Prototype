@@ -1,9 +1,14 @@
 // import components
-import {Hero} from '@/components/home'
+import {BlogContent, Hero, Location, Statistics} from '@/components/home'
 
 const page = () => {
   return (
-    <div><Hero /></div>
+    <div><Hero />
+    <Location />
+    <BlogContent />
+    <Statistics />
+
+    </div>
   )
 }
 

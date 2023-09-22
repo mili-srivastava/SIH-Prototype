@@ -2,26 +2,18 @@
 //import image
 import Image from "next/image";
 
+//import icons
+import { ImSearch } from "react-icons/im";
+import { IoEarth } from "react-icons/io5";
+
 const Navbar = () => {
   return (
     <>
       <nav className="flex justify-between p-2 items-center">
         <h1 className="text-xl font-medium">E-Waste Facility Locator </h1>
-        <div className="flex gap-3 items-center">
-          <Image
-            width={500}
-            height={500}
-            src="https://img.icons8.com/emoji/48/globe-showing-americas-emoji.png"
-            alt="globe-showing-americas-emoji"
-            className="w-10 h-10"
-          />
-          <Image
-            width={500}
-            height={500}
-            src="https://img.icons8.com/stickers/100/search.png"
-            alt="search"
-            className="w-10 h-10"
-          />
+        <div className="flex gap-5 items-center">
+          <IoEarth className="text-3xl text-green-600" />
+          <ImSearch className="text-3xl text-blue-600"/>
         </div>
       </nav>
       <hr className="border-gray-400 " />
