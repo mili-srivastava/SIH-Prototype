@@ -7,12 +7,13 @@ export const metadata = {
 }
 
 //import components
-import {Navbar, Footer} from '@/components';
+import {Navbar, Footer, UpperNavbar} from '@/components';
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <UpperNavbar/>
       <Navbar/>
       {children}
       <Footer /></body>

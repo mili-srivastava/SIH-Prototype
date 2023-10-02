@@ -3,10 +3,11 @@ import {BlogContent, Hero, Location, Statistics} from '@/components/home'
 
 const page = () => {
   return (
-    <div><Hero />
+    <div>
+    {/* <Hero />
     <Location />
     <BlogContent />
-    <Statistics />
+    <Statistics /> */}
 
     </div>
   )

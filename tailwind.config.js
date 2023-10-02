@@ -10,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "",
-        secondary: "",
+        primary: "#00755E",
+        secondary: "#29AB87",
       },
 
       // media queries

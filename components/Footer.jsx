@@ -9,7 +9,7 @@ const Footer = () => {
         <div class="sm:flex sm:items-center sm:justify-between">
             <Link href="/" class="flex items-center mb-4 sm:mb-0">
                
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-green-600">E-Waste Facility Locator</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-primary">EcoVaran</span>
             </Link>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">E-waste Facility Locator™</a>. All Rights Reserved.</span>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" className="hover:underline">EcoVaran</a>. All Rights Reserved.</span>
     </div>
 </footer>
 
