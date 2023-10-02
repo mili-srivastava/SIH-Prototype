@@ -124,8 +124,8 @@ const UpperNavbar = () => {
         </p>
       </div>
       <div className="flex gap-2 items-center">
-        <button className="py-1 px-5 border border-white text-white font-light">Login</button>
-        <button className="py-1 px-5 border border-white text-white font-light">Signup</button>
+        <button className="py-1 px-5 border border-white text-white  hover:bg-white hover:text-primary hover:border-primary">Login</button>
+        <button className="py-1 px-5 border hover:text-white hover:border-white hover:bg-transparent bg-white text-primary ">Signup</button>
       </div>
     </div>
   );
