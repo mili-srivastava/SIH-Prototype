@@ -1,5 +1,7 @@
 // import props
-import Blog from "../../props/Blog";
+
+import Blog from "@/props/Blog";
+
 const BlogContent = () => {
   return (
     <div className="px-3 mt-28">
