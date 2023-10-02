@@ -15,7 +15,7 @@ const Blog = (props) => {
           height={500}
         />
       </Link>
-      <div class="p-5">
+      <div className="p-5">
         <Link href="/">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {props.title}
@@ -38,9 +38,9 @@ const Blog = (props) => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>

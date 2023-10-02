@@ -4,10 +4,10 @@ import {BlogContent, Hero, Location, Statistics} from '@/components/home'
 const page = () => {
   return (
     <div>
-    {/* <Hero />
+    <Hero />
     <Location />
     <BlogContent />
-    <Statistics /> */}
+    <Statistics />
 
     </div>
   )
