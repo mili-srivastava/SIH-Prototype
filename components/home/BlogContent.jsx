@@ -1,6 +1,3 @@
-// import props
-
-// import Blog from "@/props/Blog";
 
 import {Blog} from "@/props/index";
 
