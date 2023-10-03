@@ -3,14 +3,14 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <div className="mt-8 bg-green-100 py-10 ">
+    <div className="mt-8 bg-green-50  py-10 ">
       <p className="text-center text-3xl font-bold text-primary ">
         Recycle Your Waste in 4 Simple Steps
       </p>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center mt-10 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center mt-3 ">
         <div className="flex flex-col items-center justify-center">
-          <div className="mt-10 flex items-center justify-center">
+          <div className="mt-10 flex items-center justify-center shadow-lg shadow-primary rounded-full">
             <Image
               src="/images/location.jpg"
               width={500}
@@ -27,7 +27,7 @@ const Steps = () => {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-center">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center shadow-lg shadow-primary rounded-full">
             <Image
               src="/images/pickup.avif"
               width={500}
@@ -44,7 +44,7 @@ const Steps = () => {
           </div>
         </div>
         <div className="mt-10 flex flex-col items-center justify-center">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center shadow-lg shadow-primary rounded-full">
             <Image
               src="/images/credit.png"
               width={500}
@@ -61,7 +61,7 @@ const Steps = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <div className="mt-10 flex items-center justify-center">
+          <div className="mt-10 flex items-center justify-center shadow-lg shadow-primary rounded-full">
             <Image
               src="/images/recycle.png"
               width={500}
