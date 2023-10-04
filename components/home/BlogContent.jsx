@@ -4,8 +4,8 @@ import {Blog} from "@/props/index";
 const BlogContent = () => {
   return (
     <div className="px-3 mt-28">
-    <p className="font-bold text-3xl mb-10">Explore e-waste&apos;s hidden truths today!</p>
-     <div className="flex flex-col gap-16 grid-cols-1 px-2">
+    <p className="font-bold text-3xl mb-10 text-center">Explore e-waste&apos;s hidden truths today!</p>
+     <div className="flex flex-wrap gap-16 justify-center items-center">
      <Blog
         image="/images/blog1.jpg"
         title=" Explore the detrimental effects of electronic waste on "
