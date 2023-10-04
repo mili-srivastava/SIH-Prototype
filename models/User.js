@@ -3,9 +3,19 @@ import mongoose, { Schema } from "mongoose";
 const UserSchema = new Schema(
   {
     name: {
-      type: String,
-      required: true,
-      trim: true,
+      firstName: {
+        type: String,
+        required: true,
+        trim: true,
+      },
+      middleName: {
+        type: String,
+        trim: true,
+      },
+      lastName: {
+        type: String,
+        trim: true,
+      },
     },
 
     email: {
@@ -54,7 +64,7 @@ const UserSchema = new Schema(
         trim: true,
       },
       pin: {
-        type: String,
+        type: Number,
         required: true,
         trim: true,
       },
@@ -70,6 +80,8 @@ const UserSchema = new Schema(
       type: Number,
       default: 0,
     },
+
+    blogs: [{ type: Schema.Types.ObjectId, ref: "Blog" }],
   },
 
   { timestamps: true }
