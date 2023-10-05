@@ -1,4 +1,5 @@
 //import props
+//import props
 import Blog from "@/props/Blog";
 
 const BlogContent = () => {
@@ -14,7 +15,7 @@ const BlogContent = () => {
       />
       <Blog
         image="/images/blogs/blog2.jpg"
-x
+        title=" E-Waste Recycling: Turning Trash into Treasure"
         desc="Dive into the world of e-waste recycling, uncovering how old gadgets can be transformed into valuable resources while reducing pollution."
       />
       <Blog
