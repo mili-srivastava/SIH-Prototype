@@ -2,7 +2,7 @@ import React from "react";
 
 const UpperNavbar = () => {
   return (
-    <div className="px-3 bg-primary flex justify-between items-center">
+    <div className="top-0 z-50 sticky w-full px-3 bg-primary flex justify-between items-center">
       <div className="py-1  gap-2 text-white flex items-center">
         <div className="w-6">
           <svg
@@ -124,8 +124,8 @@ const UpperNavbar = () => {
         </p>
       </div>
       <div className="flex gap-2 items-center">
-        <button className="py-1 px-5 border border-white text-white  hover:bg-white hover:text-primary hover:border-primary">Login</button>
-        <button className="py-1 px-5 border hover:text-white hover:border-white hover:bg-transparent bg-white text-primary ">Signup</button>
+        <button className="py-1 px-5 border border-white text-white  hover:bg-white hover:text-primary hover:border-primary rounded-lg">Login</button>
+        <button className="py-1 px-5 border hover:text-white hover:border-white hover:bg-transparent bg-white text-primary rounded-lg ">Signup</button>
       </div>
     </div>
   );

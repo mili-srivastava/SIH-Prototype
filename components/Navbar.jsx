@@ -22,7 +22,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="flex justify-between items-center pl-1 pr-3">
+      <nav className="bg-white border-b-2 top-[2.7rem] sticky z-50 flex justify-between items-center pl-1 pr-3">
         <Image
           src="/images/2.png"
           width={500}
@@ -104,7 +104,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <hr className="border-gray-400 " />
+      {/* <hr className="border-gray-400 " /> */}
     </>
   );
 };
