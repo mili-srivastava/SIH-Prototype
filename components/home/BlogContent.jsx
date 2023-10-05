@@ -1,5 +1,5 @@
-
-import {Blog} from "@/props/index";
+//import props
+import Blog from "@/props/Blog";
 
 const BlogContent = () => {
   return (
