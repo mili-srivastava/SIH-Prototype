@@ -2,17 +2,21 @@ import Blog from "@/props/Blog";
 import Image from "next/image";
 import Link from "next/link";
 //import icons
+
 import { PiPencilLineLight } from "react-icons/pi";
 import { HiPencilSquare } from "react-icons/hi";
+import { CreateBlog } from "@/components/createBlogs/CreateBlog";
 
 const page = () => {
   return (
     <div className="py-4">
       <div className="flex justify-end pr-5 pb-5">
-        <button className="bg-primary py-2 rounded-lg flex items-center text-white gap-1 px-2">
-          <PiPencilLineLight className="text-white text-xl" />
-          Create Blog
-        </button>
+        <Link href="/blogs/create">
+          <button className="bg-primary py-2 rounded-lg flex items-center text-white gap-1 px-2">
+            <PiPencilLineLight className="text-white text-xl" />
+            Create Blog
+          </button>
+        </Link>
       </div>
       <div className="text-center pb-3 lg:-mt-14">
         <p className="text-2xl font-medium lg:text-3xl">
@@ -49,10 +53,10 @@ const page = () => {
 
       {/* -----blogs---- */}
       <p className="text-2xl font-medium px-10 flex items-center py-5">
-        More Blogs 
+        More Blogs
         <span className="text-4xl">📝</span>
       </p>
-      
+
       <div className="flex justify-center items-center px-10 py-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <Blog
@@ -85,8 +89,6 @@ const page = () => {
             title=" The Power of Community: How Collective Efforts Can Tackle the E-Waste Crisis"
             desc="Explore how community-driven initiatives and shared knowledge are instrumental in combatting the global e-waste challenge."
           />
-         
-          
         </div>
       </div>
     </div>
