@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const UpperNavbar = () => {
@@ -124,8 +125,12 @@ const UpperNavbar = () => {
         </p>
       </div>
       <div className="flex gap-2 items-center">
+      <Link href="/login">
         <button className="py-1 px-5 border border-white text-white  hover:bg-white hover:text-primary hover:border-primary rounded-lg">Login</button>
+        </Link>
+        <Link href="/signup">
         <button className="py-1 px-5 border hover:text-white hover:border-white hover:bg-transparent bg-white text-primary rounded-lg ">Signup</button>
+        </Link>
       </div>
     </div>
   );
