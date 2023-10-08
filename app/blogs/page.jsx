@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div className="py-4">
       <div className="flex justify-end pr-5 pb-5">
-        <Link href="/">
+        <Link href="/blogs/createBlog">
           <button className="bg-primary py-2 rounded-lg flex items-center text-white gap-1 px-2">
             <PiPencilLineLight className="text-white text-xl" />
             Create Blog
