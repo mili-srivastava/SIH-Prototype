@@ -67,7 +67,7 @@ const Navbar = () => {
         <div
           className={
             menu
-              ? `absolute bg-secondary text-white rounded-lg w-40 h-44 py-5 top-24 right-2 `
+              ? `absolute bg-secondary text-white rounded-lg w-40 h-52 py-5 top-16 right-2 `
               : `hidden`
           }
         >
@@ -76,27 +76,31 @@ const Navbar = () => {
             className="text-2xl cursor-pointer float-right mr-3"
           />
           <br />
-          <div className="flex flex-col text-center">
+          <div className="flex flex-col gap-3 text-center">
             <Link
               href="/"
+              onClick={closeMenu}
               className="font-medium text-lg  hover:font-bold hover:underline"
             >
               Home
             </Link>
             <Link
               href="/location"
+              onClick={closeMenu}
               className="font-medium text-lg  hover:font-bold hover:underline"
             >
               Location
             </Link>
             <Link
               href="/credits"
+              onClick={closeMenu}
               className="font-medium text-lg  hover:font-bold hover:underline"
             >
               Credits
             </Link>
             <Link
               href="/blogs"
+              onClick={closeMenu}
               className="font-medium text-lg  hover:font-bold hover:underline"
             >
               Blogs
