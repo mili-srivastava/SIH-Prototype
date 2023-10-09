@@ -14,25 +14,24 @@ const CreateBlog = () => {
   // const [thumbnail, setthumbnail] = useState();
 
   //* Add Post Function
-  const addPost = async () => {
-    if (
-      blogs.title === "" ||
-      blogs.description === "" ||
-      blogs.content === "" ||
-      blogs.thumbnail === ""
-    ) {
-      toast.error("Please Fill All Fields");
-    }
-    // console.log(blogs.content)
-    // uploadImage()
-  };
+  // const addPost = async () => {
+  //   if (
+  //     blogs.title === "" ||
+  //     blogs.description === "" ||
+  //     blogs.content === "" ||
+  //     blogs.thumbnail === ""
+  //   ) {
+  //     toast.error("Please Fill All Fields");
+  //   }
+  //   // console.log(blogs.content)
+  //   // uploadImage()
+  // };
 
   const [text, settext] = useState("");
-  console.log("Value: ");
-  console.log("text: ", text);
+  // console.log("Value: ");
+  // console.log("text: ", text);
 
   return (
-
     <div className=" container mx-auto max-w-5xl py-6">
       <div className="p-5">
         {/* Top Item  */}
@@ -79,8 +78,8 @@ const CreateBlog = () => {
             className="shadow-[inset_0_0_4px_rgba(0,0,0,0.6)] w-full rounded-md p-1.5"
             placeholder="Enter Your Title"
             name="title"
-            onChange={(e) => setBlogs({ ...blogs, title: e.target.value })}
-            value={blogs.title}
+            // onChange={(e) => setBlogs({ ...blogs, title: e.target.value })}
+            // value={blogs.title}
           />
         </div>
         {/* Third description Input  */}
@@ -90,22 +89,22 @@ const CreateBlog = () => {
             className="shadow-[inset_0_0_4px_rgba(0,0,0,0.6)] w-full rounded-md p-1.5 "
             placeholder="Enter Your description"
             name="description"
-            onChange={(e) =>
-              setBlogs({ ...blogs, description: e.target.value })
-            }
-            value={blogs.description}
+            // onChange={(e) =>
+            //   setBlogs({ ...blogs, description: e.target.value })
+            // }
+            // value={blogs.description}
           />
         </div>
         {/* Four Editor  */}
         <Editor
           apiKey="q0ekbmy8v5895mjvgslryj7pa3yhas64xgz68krv6686q2v2"
-          onEditorChange={(newValue, editor) => {
-            setBlogs({ ...blogs, content: newValue });
-            settext(editor.getContent({ format: "text" }));
-          }}
-          onInit={(evt, editor) => {
-            settext(editor.getContent({ format: "text" }));
-          }}
+          // onEditorChange={(newValue, editor) => {
+          //   setBlogs({ ...blogs, content: newValue });
+          //   settext(editor.getContent({ format: "text" }));
+          // }}
+          // onInit={(evt, editor) => {
+          //   settext(editor.getContent({ format: "text" }));
+          // }}
           initialValue="Enter your Content :)"
           init={{
             plugins:
@@ -114,13 +113,12 @@ const CreateBlog = () => {
         />
       </div>
       {/* Five Submit Button  */}
-      <Button className=" w-full mt-5" onClick={addPost}>Send :)</Button>
+      <Button className=" w-full mt-5 ">Send :)</Button>
       {/* Six Preview Section  */}
       <div className="">
         <h1 className=" text-center mb-3 text-2xl">Preview</h1>
       </div>
     </div>
-
   );
 };
 
